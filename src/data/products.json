@@ -1,0 +1,520 @@
+[
+  {
+    "id": "prod-1",
+    "name": "Snake Plant Zeylanica",
+    "botanicalName": "Sansevieria trifasciata",
+    "slug": "snake-plant-zeylanica",
+    "category": "Indoor Plants",
+    "categorySlug": "indoor-plants",
+    "shortDescription": "Architectural, near-indestructible air purifier with deep emerald sword-like foliage.",
+    "description": "The Snake Plant Zeylanica is one of the most resilient and sculptural indoor plants known to modern botanical design. Renowned for its NASA-backed air-purifying abilities, it converts CO2 into oxygen even at night, making it ideal for bedrooms and executive desks. Requires minimal attention and thrives in almost any light condition.",
+    "price": 499,
+    "originalPrice": 599,
+    "images": [
+      "https://images.unsplash.com/photo-1509423350716-97f9360b4e09?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1598880940371-c756e015fea1?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1509423350716-97f9360b4e09?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "availability": "Available",
+    "stockQuantity": 28,
+    "careLevel": "Easy Care",
+    "lightRequirement": "Low Light",
+    "watering": "Every 2–3 weeks; allow soil to dry out completely between waterings.",
+    "humidity": "Tolerates standard indoor humidity (30%–50%).",
+    "soil": "Coarse well-draining cactus / succulent potting mix.",
+    "difficulty": "Beginner Friendly",
+    "growthSpeed": "Slow to Moderate",
+    "size": "18 – 24 inches tall (incl. nursery pot)",
+    "featured": true,
+    "bestSeller": true,
+    "suitableFor": [
+      "home",
+      "office",
+      "beginner"
+    ],
+    "tags": [
+      "air-purifier",
+      "bedroom",
+      "low-light",
+      "sculptural"
+    ],
+    "relatedProductSlugs": [
+      "terracotta-fluted-pot",
+      "organic-potting-mix",
+      "liquid-seaweed-fertilizer"
+    ],
+    "createdAt": "2024-01-10T10:00:00Z",
+    "updatedAt": "2024-01-10T10:00:00Z"
+  },
+  {
+    "id": "prod-2",
+    "name": "Monstera Deliciosa",
+    "botanicalName": "Monstera deliciosa",
+    "slug": "monstera-deliciosa",
+    "category": "Indoor Plants",
+    "categorySlug": "indoor-plants",
+    "shortDescription": "The iconic Swiss cheese plant with sprawling dramatic fenestrated foliage.",
+    "description": "A show-stopping centerpiece for any well-lit living area. As the Monstera matures, its glossy heart-shaped leaves develop majestic natural perforations and deep slits. Grown in our nursery with care for strong root systems and vibrant emerald hue.",
+    "price": 899,
+    "originalPrice": 1099,
+    "images": [
+      "https://images.unsplash.com/photo-1614594975525-e45190c55d0b?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1617173944883-6ffbd35d584d?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "availability": "Available",
+    "stockQuantity": 14,
+    "careLevel": "Easy Care",
+    "lightRequirement": "Bright Indirect",
+    "watering": "Weekly; water when the top 2 inches of soil feel dry to the touch.",
+    "humidity": "Prefers higher humidity (60%+); mist foliage or use pebble tray.",
+    "soil": "Chunky, aerated tropical potting blend with perlite and pine bark.",
+    "difficulty": "Easy Care",
+    "growthSpeed": "Moderate to Fast",
+    "size": "24 – 32 inches tall",
+    "featured": true,
+    "bestSeller": true,
+    "suitableFor": [
+      "home",
+      "office",
+      "gifting"
+    ],
+    "tags": [
+      "statement",
+      "statement-plant",
+      "living-room",
+      "tropical"
+    ],
+    "relatedProductSlugs": [
+      "moss-pole-totem",
+      "ceramic-matte-planter",
+      "organic-potting-mix"
+    ],
+    "createdAt": "2024-01-12T10:00:00Z",
+    "updatedAt": "2024-01-12T10:00:00Z"
+  },
+  {
+    "id": "prod-3",
+    "name": "Fiddle Leaf Fig",
+    "botanicalName": "Ficus lyrata",
+    "slug": "fiddle-leaf-fig",
+    "category": "Indoor Plants",
+    "categorySlug": "indoor-plants",
+    "shortDescription": "Majestic violin-shaped leaves on an elegant architectural trunk.",
+    "description": "The crown jewel of interior architecture. The Fiddle Leaf Fig commands attention with its massive, waxy violin-shaped leaves and tall silhouette. It loves stable, bright indirect sunshine and gentle, regular hydration.",
+    "price": 1499,
+    "originalPrice": 1799,
+    "images": [
+      "https://images.unsplash.com/photo-1545241047-6083a3684587?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1512428813834-c702c7702b78?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "availability": "Low Stock",
+    "stockQuantity": 3,
+    "careLevel": "Moderate",
+    "lightRequirement": "Bright Indirect",
+    "watering": "Every 7–10 days; check soil moisture thoroughly before watering.",
+    "humidity": "Moderate to high humidity; keep away from AC vents and cold drafts.",
+    "soil": "Rich, well-draining loamy mix with peat moss and perlite.",
+    "difficulty": "Requires Consistent Routine",
+    "growthSpeed": "Moderate in growing season",
+    "size": "36 – 48 inches tall",
+    "featured": true,
+    "bestSeller": false,
+    "suitableFor": [
+      "home",
+      "office"
+    ],
+    "tags": [
+      "luxury",
+      "interior-designer-favourite",
+      "tall-plant"
+    ],
+    "relatedProductSlugs": [
+      "ceramic-matte-planter",
+      "liquid-seaweed-fertilizer"
+    ],
+    "createdAt": "2024-01-15T10:00:00Z",
+    "updatedAt": "2024-01-15T10:00:00Z"
+  },
+  {
+    "id": "prod-4",
+    "name": "ZZ Plant 'Raven' Emerald",
+    "botanicalName": "Zamioculcas zamiifolia",
+    "slug": "zz-plant-emerald",
+    "category": "Indoor Plants",
+    "categorySlug": "indoor-plants",
+    "shortDescription": "Ultra-resilient foliage with waxy, reflective emerald leaves that require zero fuss.",
+    "description": "If you have a busy lifestyle or a dimmer room, the ZZ Plant is your steadfast companion. With succulent rhizomes that store water beneath the soil, it can easily endure weeks of forgetfulness while retaining its brilliant polished appearance.",
+    "price": 549,
+    "originalPrice": 650,
+    "images": [
+      "https://images.unsplash.com/photo-1632207691143-643e2a9a9361?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "availability": "Available",
+    "stockQuantity": 32,
+    "careLevel": "Easy Care",
+    "lightRequirement": "Low Light",
+    "watering": "Every 3–4 weeks; drought-tolerant rhizome storage.",
+    "humidity": "Standard indoor humidity is fine.",
+    "soil": "Well-draining porous potting blend.",
+    "difficulty": "Nearly Unkillable",
+    "growthSpeed": "Slow",
+    "size": "14 – 18 inches tall",
+    "featured": true,
+    "bestSeller": true,
+    "suitableFor": [
+      "office",
+      "beginner",
+      "home",
+      "gifting"
+    ],
+    "tags": [
+      "desk-plant",
+      "low-maintenance",
+      "beginner"
+    ],
+    "relatedProductSlugs": [
+      "terracotta-fluted-pot",
+      "organic-potting-mix"
+    ],
+    "createdAt": "2024-01-18T10:00:00Z",
+    "updatedAt": "2024-01-18T10:00:00Z"
+  },
+  {
+    "id": "prod-5",
+    "name": "Areca Palm Specimen",
+    "botanicalName": "Dypsis lutescens",
+    "slug": "areca-palm-specimen",
+    "category": "Indoor Plants",
+    "categorySlug": "indoor-plants",
+    "shortDescription": "Feathery, arching golden-green fronds that bring a tropical resort atmosphere indoors.",
+    "description": "The Areca Palm is one of nature's greatest natural humidifiers and air purifiers. Its arching golden canes and delicate fronds soften minimalist spaces and provide privacy screening for large windows or office lounges.",
+    "price": 1199,
+    "originalPrice": 1399,
+    "images": [
+      "https://images.unsplash.com/photo-1512428813834-c702c7702b78?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "availability": "Available",
+    "stockQuantity": 18,
+    "careLevel": "Moderate",
+    "lightRequirement": "Medium / Indirect",
+    "watering": "Water thoroughly when top 1 inch is dry; never let roots sit in standing water.",
+    "humidity": "Enjoys regular misting and warm ambient temperature.",
+    "soil": "Nutrient-rich, slightly acidic well-draining soil.",
+    "difficulty": "Moderate",
+    "growthSpeed": "Moderate",
+    "size": "40 – 50 inches tall",
+    "featured": false,
+    "bestSeller": true,
+    "suitableFor": [
+      "home",
+      "office",
+      "outdoor"
+    ],
+    "tags": [
+      "palm",
+      "tropical",
+      "screening",
+      "living-room"
+    ],
+    "relatedProductSlugs": [
+      "organic-potting-mix",
+      "liquid-seaweed-fertilizer"
+    ],
+    "createdAt": "2024-01-20T10:00:00Z",
+    "updatedAt": "2024-01-20T10:00:00Z"
+  },
+  {
+    "id": "prod-6",
+    "name": "Peace Lily 'Sensation'",
+    "botanicalName": "Spathiphyllum wallisii",
+    "slug": "peace-lily-sensation",
+    "category": "Indoor Plants",
+    "categorySlug": "indoor-plants",
+    "shortDescription": "Deep ribbed foliage crowned with elegant porcelain-white spathes.",
+    "description": "Beloved for its tranquil elegance and communicative nature — the Peace Lily gently droops when thirsty and perks back up within hours of watering. A premier air purifier that filters benzene and formaldehyde.",
+    "price": 649,
+    "originalPrice": 799,
+    "images": [
+      "https://images.unsplash.com/photo-1512428813834-c702c7702b78?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "availability": "Available",
+    "stockQuantity": 22,
+    "careLevel": "Easy Care",
+    "lightRequirement": "Medium / Indirect",
+    "watering": "Weekly; water when leaves begin to show subtle softness.",
+    "humidity": "High humidity lover; thrives in bathrooms with indirect light or misted living spaces.",
+    "soil": "Moisture-retaining but porous potting mix.",
+    "difficulty": "Easy Care",
+    "growthSpeed": "Moderate",
+    "size": "16 – 22 inches tall",
+    "featured": true,
+    "bestSeller": false,
+    "suitableFor": [
+      "home",
+      "office",
+      "gifting"
+    ],
+    "tags": [
+      "flowering",
+      "air-purifier",
+      "peaceful"
+    ],
+    "relatedProductSlugs": [
+      "ceramic-matte-planter",
+      "organic-potting-mix"
+    ],
+    "createdAt": "2024-01-22T10:00:00Z",
+    "updatedAt": "2024-01-22T10:00:00Z"
+  },
+  {
+    "id": "prod-7",
+    "name": "Bougainvillea 'Sunset Coral'",
+    "botanicalName": "Bougainvillea spectabilis",
+    "slug": "bougainvillea-sunset-coral",
+    "category": "Outdoor Plants",
+    "categorySlug": "outdoor-plants",
+    "shortDescription": "Prolific sunburst blooms in deep terracotta-coral for sunny balconies and terraces.",
+    "description": "Hardy, drought-tolerant, and exceptionally rewarding. Our trained Bougainvillea specimens produce waves of dazzling sunset coral bracts throughout the year when positioned in full sun.",
+    "price": 599,
+    "originalPrice": 699,
+    "images": [
+      "https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "availability": "Available",
+    "stockQuantity": 15,
+    "careLevel": "Easy Care",
+    "lightRequirement": "Direct Sunlight",
+    "watering": "Moderate; water deeply once dry. Thrives on slight neglect once established.",
+    "humidity": "Loves open outdoor airflow and warm conditions.",
+    "soil": "Well-drained garden soil amended with compost.",
+    "difficulty": "Easy Care",
+    "growthSpeed": "Fast in full sun",
+    "size": "24 – 30 inches tall (trellised)",
+    "featured": false,
+    "bestSeller": true,
+    "suitableFor": [
+      "outdoor"
+    ],
+    "tags": [
+      "balcony",
+      "flowering",
+      "full-sun",
+      "terrace"
+    ],
+    "relatedProductSlugs": [
+      "terracotta-fluted-pot",
+      "organic-potting-mix"
+    ],
+    "createdAt": "2024-01-25T10:00:00Z",
+    "updatedAt": "2024-01-25T10:00:00Z"
+  },
+  {
+    "id": "prod-8",
+    "name": "Artisanal Fluted Terracotta Planter",
+    "botanicalName": "Handmade Botanical Vessel",
+    "slug": "terracotta-fluted-pot",
+    "category": "Pots & Planters",
+    "categorySlug": "pots-planters",
+    "shortDescription": "Porous natural clay pot with hand-turned tactile fluting and drainage hole.",
+    "description": "Crafted by master regional potters using mineral-rich natural clay. The porous terracotta walls promote natural soil aeration and prevent root rot by evaporating excess moisture. Features a subtle fluted texture and matching drainage saucer.",
+    "price": 799,
+    "originalPrice": 950,
+    "images": [
+      "https://images.unsplash.com/photo-1485955900006-10f4d324d411?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "availability": "Available",
+    "stockQuantity": 40,
+    "careLevel": "Easy Care",
+    "lightRequirement": "Bright Indirect",
+    "watering": "N/A (Planter)",
+    "soil": "Pairs ideally with Leaf Lover signature organic mix.",
+    "size": "8 inch diameter × 9 inch height",
+    "featured": true,
+    "bestSeller": true,
+    "suitableFor": [
+      "home",
+      "office",
+      "gifting",
+      "outdoor"
+    ],
+    "tags": [
+      "handcrafted",
+      "terracotta",
+      "planter",
+      "porous"
+    ],
+    "relatedProductSlugs": [
+      "snake-plant-zeylanica",
+      "organic-potting-mix"
+    ],
+    "createdAt": "2024-01-28T10:00:00Z",
+    "updatedAt": "2024-01-28T10:00:00Z"
+  },
+  {
+    "id": "prod-9",
+    "name": "Minimalist Matte Ceramic Planter (Olive)",
+    "botanicalName": "Architectural Ceramic Vessel",
+    "slug": "ceramic-matte-planter",
+    "category": "Pots & Planters",
+    "categorySlug": "pots-planters",
+    "shortDescription": "Silky matte glazed stoneware pot in muted botanical olive green with integrated tray.",
+    "description": "Designed to complement contemporary interiors. Hand-glazed with a velvet matte texture, this stoneware planter features a clean cylinder form and a seamlessly integrated drip saucer.",
+    "price": 999,
+    "originalPrice": 1200,
+    "images": [
+      "https://images.unsplash.com/photo-1485955900006-10f4d324d411?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "availability": "Available",
+    "stockQuantity": 19,
+    "careLevel": "Easy Care",
+    "lightRequirement": "Bright Indirect",
+    "watering": "N/A (Planter)",
+    "soil": "Suitable for all indoor foliage.",
+    "size": "10 inch diameter × 10 inch height",
+    "featured": false,
+    "bestSeller": false,
+    "suitableFor": [
+      "home",
+      "office",
+      "gifting"
+    ],
+    "tags": [
+      "ceramic",
+      "modern",
+      "matte",
+      "olive"
+    ],
+    "relatedProductSlugs": [
+      "monstera-deliciosa",
+      "organic-potting-mix"
+    ],
+    "createdAt": "2024-02-01T10:00:00Z",
+    "updatedAt": "2024-02-01T10:00:00Z"
+  },
+  {
+    "id": "prod-10",
+    "name": "Living Earth Organic Potting Mix (5kg)",
+    "botanicalName": "Artisanal Soil Blend",
+    "slug": "organic-potting-mix",
+    "category": "Soil & Fertilizers",
+    "categorySlug": "soil-fertilizers",
+    "shortDescription": "Aerated bio-active soil blend enriched with vermicompost, perlite, neem and biochar.",
+    "description": "Formulated specifically for tropical indoor foliage and potted container gardens. Unlike standard compacting soil, this blend provides optimum drainage, holds balanced moisture, and naturally discourages root gnats with powdered neem cake.",
+    "price": 349,
+    "originalPrice": 399,
+    "images": [
+      "https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "availability": "Available",
+    "stockQuantity": 50,
+    "careLevel": "Easy Care",
+    "lightRequirement": "Bright Indirect",
+    "watering": "Store bag sealed in a dry cool place.",
+    "soil": "100% organic, peat-free, microbe-rich.",
+    "size": "5 kg eco-kraft bag",
+    "featured": false,
+    "bestSeller": true,
+    "suitableFor": [
+      "home",
+      "outdoor",
+      "beginner"
+    ],
+    "tags": [
+      "soil",
+      "organic",
+      "vermicompost",
+      "nutrients"
+    ],
+    "relatedProductSlugs": [
+      "liquid-seaweed-fertilizer",
+      "snake-plant-zeylanica"
+    ],
+    "createdAt": "2024-02-05T10:00:00Z",
+    "updatedAt": "2024-02-05T10:00:00Z"
+  },
+  {
+    "id": "prod-11",
+    "name": "Cold-Pressed Liquid Seaweed Tonic (250ml)",
+    "botanicalName": "Organic Growth Elixir",
+    "slug": "liquid-seaweed-fertilizer",
+    "category": "Soil & Fertilizers",
+    "categorySlug": "soil-fertilizers",
+    "shortDescription": "Bio-stimulant rich in micro-nutrients and plant growth hormones for vigorous foliage.",
+    "description": "Give your green companions a gentle, non-burning boost. Extracted cold from sustainably harvested brown kelp, this natural tonic boosts root expansion, intensifies chlorophyll pigmentation, and builds resistance against pests.",
+    "price": 299,
+    "originalPrice": 350,
+    "images": [
+      "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "availability": "Available",
+    "stockQuantity": 35,
+    "careLevel": "Easy Care",
+    "lightRequirement": "Medium / Indirect",
+    "watering": "Dilute 5ml in 1 litre of water; apply once every 14 days during growing season.",
+    "soil": "Safe for all soil and semi-hydro setups.",
+    "size": "250 ml amber glass bottle with dropper",
+    "featured": false,
+    "bestSeller": false,
+    "suitableFor": [
+      "home",
+      "office",
+      "outdoor",
+      "beginner"
+    ],
+    "tags": [
+      "fertilizer",
+      "organic",
+      "seaweed",
+      "growth"
+    ],
+    "relatedProductSlugs": [
+      "monstera-deliciosa",
+      "terracotta-fluted-pot"
+    ],
+    "createdAt": "2024-02-10T10:00:00Z",
+    "updatedAt": "2024-02-10T10:00:00Z"
+  },
+  {
+    "id": "prod-12",
+    "name": "Variegated Monstera Thai Constellation",
+    "botanicalName": "Monstera deliciosa 'Thai Constellation'",
+    "slug": "monstera-thai-constellation",
+    "category": "Indoor Plants",
+    "categorySlug": "indoor-plants",
+    "shortDescription": "Rare collector's cultivar featuring permanent cream splashes resembling stars.",
+    "description": "An extraordinary botanical treasure for discerning collectors. Each leaf unfurls with an unpredictable constellation of creamy marbling and starry speckles. Tissue-cultured and hardened off in climate-controlled nursery conditions.",
+    "price": 4999,
+    "originalPrice": 5999,
+    "images": [
+      "https://images.unsplash.com/photo-1614594975525-e45190c55d0b?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "availability": "Coming Soon",
+    "stockQuantity": 0,
+    "careLevel": "High Care",
+    "lightRequirement": "Bright Indirect",
+    "watering": "Allow top 50% of chunky aroid mix to dry before watering.",
+    "humidity": "Prefers 65%+ humidity to prevent browning on variegated sections.",
+    "soil": "Premium aroid blend with orchid bark, perlite, pumice, and charcoal.",
+    "difficulty": "Experienced Collectors",
+    "growthSpeed": "Slow",
+    "size": "18 – 22 inches tall",
+    "featured": true,
+    "bestSeller": false,
+    "suitableFor": [
+      "home",
+      "gifting"
+    ],
+    "tags": [
+      "rare-plant",
+      "variegated",
+      "collector",
+      "thai-constellation"
+    ],
+    "relatedProductSlugs": [
+      "ceramic-matte-planter",
+      "liquid-seaweed-fertilizer"
+    ],
+    "createdAt": "2024-02-15T10:00:00Z",
+    "updatedAt": "2024-02-15T10:00:00Z"
+  }
+]

@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-forest: #183A2B;
+    --color-leaf: #4F7659;
+    --color-cream: #F7F4EC;
+    --color-sage: #E7EDE3;
+    --color-terracotta: #B87355;
+    --color-text: #18211C;
+    --color-muted: #667067;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-cream);
+    color: var(--color-text);
+    font-family: var(--font-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background-color: #4F7659;
+    color: #FFFFFF;
+  }
+}
+
+/* Custom Botanical Utilities */
+.editorial-heading {
+  font-family: var(--font-serif), Georgia, serif;
+  letter-spacing: -0.02em;
+}
+
+/* Smooth transitions */
+.smooth-transition {
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Glassmorphism / subtle blur */
+.glass-nav {
+  background: rgba(247, 244, 236, 0.88);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* Hide scrollbars on horizontal carousels while allowing scroll */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Curved Select Dropdowns Globally */
+select {
+  border-radius: 14px;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%23183A2B' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+  background-position: right 0.75rem center;
+  background-repeat: no-repeat;
+  background-size: 1.25em 1.25em;
+  padding-right: 2.5rem;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+select option {
+  background-color: #FAF8F3;
+  color: #18211C;
+  padding: 8px 12px;
+}
+
+/* Subtle Botanical Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 18px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes floatSlow {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 0 8px rgba(37, 211, 102, 0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.animate-float-slow {
+  animation: floatSlow 6s ease-in-out infinite;
+}
+
+.whatsapp-pulse {
+  animation: pulseGlow 2.5s infinite;
+}
+
+/* Delay Helpers */
+.delay-100 { animation-delay: 100ms; }
+.delay-200 { animation-delay: 200ms; }
+.delay-300 { animation-delay: 300ms; }
+.delay-400 { animation-delay: 400ms; }
+
+
