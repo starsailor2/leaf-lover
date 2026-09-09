@@ -1,0 +1,13 @@
+[
+  {
+    "id": "inq-1788964109643",
+    "serviceType": "balcony-setup",
+    "name": "QA Test User",
+    "phone": "9876543210",
+    "email": "test@example.com",
+    "location": "Bangalore",
+    "message": "Automated QA test inquiry",
+    "status": "new",
+    "createdAt": "2026-09-09T14:28:29.643Z"
+  }
+]
