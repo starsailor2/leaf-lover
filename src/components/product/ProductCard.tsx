@@ -52,7 +52,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, priority = fa
         </div>
 
         {/* ── Frosted glass info strip — always visible at bottom ── */}
-        <div className="absolute bottom-0 inset-x-0 p-4 z-10">
+        <div className="absolute bottom-0 inset-x-0 p-3.5 sm:p-4 pb-14 sm:pb-4 z-10">
           {/* Category + light */}
           <div className="flex items-center gap-2 text-[10px] text-cream/60 font-medium mb-1">
             <span>{product.category}</span>
@@ -64,16 +64,16 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, priority = fa
           </div>
 
           {/* Name */}
-          <h3 className="font-serif text-lg font-bold text-cream leading-snug group-hover:text-sage transition-colors">
+          <h3 className="font-serif text-base sm:text-lg font-bold text-cream leading-snug group-hover:text-sage transition-colors">
             {product.name}
           </h3>
           {product.botanicalName && (
-            <p className="text-[11px] italic text-cream/50 font-serif mt-0.5">{product.botanicalName}</p>
+            <p className="text-[10px] sm:text-[11px] italic text-cream/50 font-serif mt-0.5">{product.botanicalName}</p>
           )}
 
           {/* Price */}
-          <div className="flex items-baseline gap-2 mt-2">
-            <span className="text-base font-bold text-cream">{formatPrice(product.price)}</span>
+          <div className="flex items-baseline gap-2 mt-1.5 sm:mt-2">
+            <span className="text-sm sm:text-base font-bold text-cream">{formatPrice(product.price)}</span>
             {product.originalPrice && product.originalPrice > product.price && (
               <span className="text-xs text-cream/40 line-through">{formatPrice(product.originalPrice)}</span>
             )}
@@ -81,13 +81,13 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, priority = fa
         </div>
       </Link>
 
-      {/* ── Action bar — slides up from below on hover ── */}
+      {/* ── Action bar — immediately accessible on mobile, slides up on hover on desktop ── */}
       <div className="card-action-reveal absolute bottom-0 inset-x-0 z-20">
-        <div className="bg-forest/95 backdrop-blur-sm px-4 py-3 grid grid-cols-2 gap-2 border-t border-white/10">
+        <div className="bg-forest/95 backdrop-blur-md px-3 sm:px-4 py-2 sm:py-2.5 grid grid-cols-2 gap-2 border-t border-white/10">
           <button
             onClick={(e) => { e.preventDefault(); addItem(product, 1); }}
             disabled={isOutOfStock}
-            className="w-full py-2 px-3 bg-leaf hover:bg-leaf/80 disabled:bg-stone-600 disabled:text-stone-400 text-cream text-xs font-semibold rounded-lg flex items-center justify-center gap-1.5 transition-colors"
+            className="w-full py-2 px-2.5 bg-leaf hover:bg-leaf/80 disabled:bg-stone-600 disabled:text-stone-400 text-cream text-[11px] sm:text-xs font-semibold flex items-center justify-center gap-1.5 transition-colors"
             aria-label={`Add ${product.name} to cart`}
           >
             <ShoppingBag className="w-3.5 h-3.5" />
@@ -97,7 +97,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, priority = fa
             variant="outline"
             size="sm"
             options={{ type: 'product', productName: product.name, productPrice: product.price }}
-            className="w-full text-xs border-white/20 text-cream hover:bg-white/10"
+            className="w-full text-[11px] sm:text-xs border-white/20 text-cream hover:bg-white/10 py-2"
           >
             Ask Us
           </WhatsAppButton>

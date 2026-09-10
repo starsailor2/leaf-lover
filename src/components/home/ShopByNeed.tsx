@@ -71,15 +71,14 @@ export const ShopByNeed: React.FC = () => {
 
       </div>
 
-      {/* Horizontal drag-scroll filmstrip — full width, no max-width cap */}
-      <div className="overflow-x-auto no-scrollbar cursor-grab active:cursor-grabbing">
-        <div className="flex gap-4 px-4 sm:px-8 lg:px-12 pb-2" style={{ width: 'max-content' }}>
+      {/* Horizontal drag-scroll filmstrip with mobile snap scrolling */}
+      <div className="overflow-x-auto no-scrollbar snap-x snap-mandatory cursor-grab active:cursor-grabbing touch-pan-x">
+        <div className="flex gap-3.5 sm:gap-4 px-4 sm:px-8 lg:px-12 pb-3" style={{ width: 'max-content' }}>
           {needsData.map((item, idx) => (
-            <FadeIn key={item.id} direction="scale" delay={idx * 90}>
+            <FadeIn key={item.id} direction="scale" delay={idx * 90} className="snap-start">
               <Link
                 href={item.href}
-                className="group relative flex-shrink-0 block overflow-hidden shadow-md hover:shadow-xl transition-shadow"
-                style={{ width: '260px', height: '360px' }}
+                className="group relative flex-shrink-0 block overflow-hidden shadow-md hover:shadow-xl transition-shadow w-[230px] sm:w-[260px] h-[320px] sm:h-[360px]"
                 draggable={false}
               >
                 {/* Full-bleed image — no border, no background box */}
@@ -87,7 +86,7 @@ export const ShopByNeed: React.FC = () => {
                   src={item.image}
                   alt={item.title}
                   fill
-                  sizes="260px"
+                  sizes="(max-width: 640px) 230px, 260px"
                   className="object-cover transition-transform duration-700 group-hover:scale-105"
                 />
 
