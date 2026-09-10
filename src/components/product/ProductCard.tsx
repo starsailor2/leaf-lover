@@ -1,4 +1,4 @@
-﻿'use client';
+'use client';
 
 import React from 'react';
 import Link from 'next/link';
@@ -20,9 +20,9 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, priority = fa
   const isOutOfStock = product.availability === 'Out of Stock';
 
   return (
-    <div className="group relative flex flex-col overflow-hidden rounded-2xl shadow-soft hover:shadow-card hover:-translate-y-1.5 transition-all duration-300 cursor-pointer bg-forest">
+    <div className="group relative flex flex-col overflow-hidden shadow-soft hover:shadow-card hover:-translate-y-1.5 transition-all duration-300 cursor-pointer bg-forest">
 
-      {/* Full-bleed image — no border, no padding, fills card face */}
+      {/* Full-bleed image — sharp corners, edge to edge */}
       <Link href={`/shop/${product.slug}`} className="relative aspect-[3/4] w-full block overflow-hidden">
         <Image
           src={product.images[0] || 'https://images.unsplash.com/photo-1545241047-6083a3684587?auto=format&fit=crop&w=600&q=80'}

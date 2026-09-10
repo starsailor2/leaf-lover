@@ -1,4 +1,4 @@
-﻿'use client';
+'use client';
 
 import React from 'react';
 import { Sprout, Compass, Sparkles, HeartHandshake } from 'lucide-react';
@@ -40,8 +40,8 @@ export const WhyLeafLover: React.FC = () => {
     <section className="py-20 lg:py-24 bg-cream-light/80 border-t border-forest/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-        {/* Animated stats strip */}
-        <FadeIn direction="up" className="grid grid-cols-2 sm:grid-cols-4 gap-6 mb-16 p-7 rounded-2xl bg-forest text-cream">
+        {/* Animated stats strip - Sharp Corners */}
+        <FadeIn direction="up" className="grid grid-cols-2 sm:grid-cols-4 gap-6 mb-16 p-7 bg-forest text-cream border border-forest-800">
           {stats.map((stat) => (
             <div key={stat.label} className="text-center">
               <p className="editorial-heading text-3xl sm:text-4xl font-bold text-cream">
@@ -70,10 +70,10 @@ export const WhyLeafLover: React.FC = () => {
                 key={pillar.title}
                 direction="scale"
                 staggerIndex={idx}
-                className="group p-6 rounded-2xl bg-white/70 border border-forest/10 hover:border-leaf/30 shadow-soft hover:shadow-card hover:-translate-y-1.5 transition-all duration-300 space-y-3"
+                className="group p-6 bg-white/80 border border-forest/10 hover:border-leaf/30 shadow-soft hover:shadow-card hover:-translate-y-1.5 transition-all duration-300 space-y-3"
               >
                 {/* Icon with grow animation on hover */}
-                <div className="w-11 h-11 rounded-xl bg-forest/5 text-leaf flex items-center justify-center group-hover:scale-110 group-hover:bg-leaf/10 transition-all duration-300">
+                <div className="w-11 h-11 bg-forest/5 text-leaf flex items-center justify-center group-hover:scale-110 group-hover:bg-leaf/10 transition-all duration-300 border border-forest/5">
                   <Icon className="w-5 h-5" />
                 </div>
 

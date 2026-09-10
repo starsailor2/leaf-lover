@@ -1,4 +1,4 @@
-﻿'use client';
+'use client';
 
 import React, { useEffect, useRef } from 'react';
 import Link from 'next/link';
@@ -36,8 +36,10 @@ export const Hero: React.FC = () => {
           sizes="100vw"
           className="object-cover object-center"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-forest/90 via-forest/30 to-forest/10" />
-        <div className="absolute inset-0 bg-gradient-to-r from-forest/40 via-transparent to-transparent" />
+        {/* Cinematic gradient overlays — deep contrast in the text area (bottom-left) while preserving foliage on the right */}
+        <div className="absolute inset-0 bg-gradient-to-t from-forest-950 via-forest-950/75 to-forest-950/30" />
+        <div className="absolute inset-0 bg-gradient-to-r from-forest-950/95 via-forest-950/70 to-transparent sm:w-4/5 lg:w-3/5" />
+        <div className="absolute bottom-0 left-0 w-full lg:w-2/3 h-4/5 bg-[radial-gradient(ellipse_at_bottom_left,_var(--tw-gradient-stops))] from-forest-950/85 via-forest-950/40 to-transparent pointer-events-none" />
       </div>
 
       {/* Content anchored to lower third */}
@@ -52,11 +54,11 @@ export const Hero: React.FC = () => {
             <span>Modern Botanical Living &amp; Services</span>
           </div>
 
-          <h1 className="editorial-heading text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold text-cream leading-[1.05] tracking-tight max-w-3xl">
+          <h1 className="editorial-heading text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold text-cream leading-[1.05] tracking-tight max-w-3xl drop-shadow-[0_2px_10px_rgba(0,0,0,0.3)]">
             <span className="inline-block animate-fade-in-up" style={{ animationDelay: '200ms' }}>
               Bring a little
             </span>{' '}
-            <span className="inline-block italic font-normal text-sage animate-fade-in-up" style={{ animationDelay: '340ms' }}>
+            <span className="inline-block italic font-normal text-sage-light animate-fade-in-up" style={{ animationDelay: '340ms' }}>
               more nature
             </span>{' '}
             <span className="inline-block animate-fade-in-up" style={{ animationDelay: '480ms' }}>
@@ -65,7 +67,7 @@ export const Hero: React.FC = () => {
           </h1>
 
           <p
-            className="text-cream/75 text-base sm:text-lg max-w-xl mt-5 leading-relaxed font-normal animate-fade-in-up"
+            className="text-cream/90 text-base sm:text-lg max-w-xl mt-5 leading-relaxed font-normal animate-fade-in-up drop-shadow-[0_1px_4px_rgba(0,0,0,0.4)]"
             style={{ animationDelay: '580ms' }}
           >
             Plants, planters, gardening guidance and spaces designed to grow with you.
@@ -97,7 +99,7 @@ export const Hero: React.FC = () => {
           </div>
 
           <div
-            className="mt-10 pt-7 border-t border-white/15 grid grid-cols-3 gap-4 text-xs text-cream/60 max-w-md animate-fade-in-up"
+            className="mt-10 pt-7 border-t border-white/15 grid grid-cols-3 gap-4 text-xs text-cream/75 max-w-md animate-fade-in-up"
             style={{ animationDelay: '780ms' }}
           >
             <div className="flex items-center gap-2">

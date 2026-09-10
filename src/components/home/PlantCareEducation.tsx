@@ -42,18 +42,18 @@ export const PlantCareEducation: React.FC = () => {
           {featuredGuides.map((guide, idx) => (
             <FadeIn
               key={guide.id}
-              direction="up"
-              delay={idx * 100}
-              className="group flex flex-col bg-white/70 rounded-xl overflow-hidden border border-forest/10 hover:border-forest/20 shadow-soft hover:shadow-card hover:-translate-y-1.5 transition-all duration-300"
+              direction="scale"
+              staggerIndex={idx}
+              className="group flex flex-col bg-white border border-forest/10 hover:border-forest/25 shadow-soft hover:shadow-card hover:-translate-y-1.5 transition-all duration-300"
             >
               <Link href={`/guides/${guide.slug}`} className="relative aspect-[16/10] w-full overflow-hidden bg-forest/5">
                 <Image
                   src={guide.coverImage}
                   alt={guide.title}
                   fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                 />
-                <div className="absolute top-3 left-3 bg-cream/90 text-forest text-[11px] font-semibold px-2.5 py-1 rounded-full backdrop-blur-sm border border-forest/10">
+                <div className="absolute top-3 left-3 bg-cream/95 text-forest text-[11px] font-semibold px-2.5 py-1 backdrop-blur-sm border border-forest/10">
                   {guide.category}
                 </div>
               </Link>

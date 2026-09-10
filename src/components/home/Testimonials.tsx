@@ -1,4 +1,4 @@
-﻿'use client';
+'use client';
 
 import React from 'react';
 import { Star, Quote } from 'lucide-react';
@@ -72,7 +72,7 @@ export const Testimonials: React.FC = () => {
           {doubled.map((t, idx) => (
             <div
               key={`${t.id}-${idx}`}
-              className="flex-shrink-0 w-[320px] sm:w-[360px] p-6 sm:p-7 rounded-2xl bg-white/70 border border-forest/10 shadow-soft flex flex-col justify-between"
+              className="flex-shrink-0 w-[320px] sm:w-[360px] p-6 sm:p-7 bg-white/80 border border-forest/10 shadow-soft flex flex-col justify-between"
             >
               <div>
                 <div className="flex items-center gap-1 mb-3 text-amber-500">

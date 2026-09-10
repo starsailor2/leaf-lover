@@ -67,10 +67,10 @@ export const ServicesSection: React.FC = () => {
                 key={service.title}
                 direction="up"
                 delay={idx * 100}
-                className="group flex flex-col justify-between p-6 rounded-2xl bg-forest-900/80 border border-forest-700/60 hover:border-leaf-light/50 transition-all duration-300 hover:-translate-y-1.5 shadow-lg hover:shadow-2xl"
+                className="group flex flex-col justify-between p-6 bg-forest-900/80 border border-forest-700/60 hover:border-leaf-light/50 transition-all duration-300 hover:-translate-y-1.5 shadow-lg hover:shadow-2xl"
               >
                 <div>
-                  <div className="w-12 h-12 rounded-xl bg-forest-800 text-leaf-light flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+                  <div className="w-12 h-12 bg-forest-800 text-leaf-light flex items-center justify-center mb-5 group-hover:scale-110 transition-transform border border-forest-700">
                     <Icon className="w-6 h-6" />
                   </div>
                   <h3 className="font-serif text-xl font-bold text-cream mb-2">

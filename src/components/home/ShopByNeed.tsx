@@ -1,4 +1,4 @@
-﻿'use client';
+'use client';
 
 import React from 'react';
 import Link from 'next/link';
@@ -78,7 +78,7 @@ export const ShopByNeed: React.FC = () => {
             <FadeIn key={item.id} direction="scale" delay={idx * 90}>
               <Link
                 href={item.href}
-                className="group relative flex-shrink-0 block overflow-hidden rounded-2xl"
+                className="group relative flex-shrink-0 block overflow-hidden shadow-md hover:shadow-xl transition-shadow"
                 style={{ width: '260px', height: '360px' }}
                 draggable={false}
               >

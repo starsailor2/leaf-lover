@@ -70,23 +70,23 @@ export const BusinessSection: React.FC = () => {
             </div>
           </FadeIn>
 
-          {/* Right Image */}
+          {/* Right Image - Sharp Corners, Direct Presentation */}
           <FadeIn direction="left" className="lg:col-span-5 relative">
-            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl border border-forest-800 group">
+            <div className="relative aspect-[4/3] w-full overflow-hidden shadow-2xl group">
               <Image
                 src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1000&q=80"
                 alt="Modern corporate office with lush green plants"
                 fill
                 className="object-cover transition-transform duration-700 group-hover:scale-105"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-forest-950/70 via-transparent to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-forest-950/80 via-transparent to-transparent" />
               
-              <div className="absolute bottom-6 left-6 right-6 p-4 rounded-xl bg-forest-900/90 backdrop-blur-md border border-forest-700/50">
-                <p className="text-xs font-serif italic text-cream">
+              <div className="absolute bottom-6 left-6 right-6 p-4 bg-forest-900/95 backdrop-blur-md border-l-2 border-leaf-light shadow-xl">
+                <p className="text-xs font-serif italic text-cream leading-relaxed">
                   &ldquo;Leaf Lover transformed our executive boardroom and lounge with resilient, magnificent foliage. Zero maintenance headache.&rdquo;
                 </p>
-                <p className="text-[10px] text-sage uppercase tracking-wider font-semibold mt-1">
-                  Design Studio & Co-working Client
+                <p className="text-[10px] text-sage uppercase tracking-wider font-semibold mt-1.5">
+                  Design Studio &amp; Co-working Client
                 </p>
               </div>
             </div>
