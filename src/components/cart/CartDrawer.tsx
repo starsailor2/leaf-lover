@@ -1,6 +1,6 @@
 'use client';
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { X, Plus, Minus, Trash2, ShoppingBag, ArrowRight, ShieldCheck } from 'lucide-react';
@@ -21,18 +21,56 @@ export const CartDrawer: React.FC = () => {
     freeDeliveryThresholdRemaining
   } = useCart();
 
-  if (!isCartOpen) return null;
+  // Handle Escape key to close cart
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape' && isCartOpen) {
+        setIsCartOpen(false);
+      }
+    };
+    if (isCartOpen) {
+      window.addEventListener('keydown', handleKeyDown);
+    }
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [isCartOpen, setIsCartOpen]);
+
+  // Lock background body scroll when cart is open
+  useEffect(() => {
+    if (isCartOpen) {
+      const originalOverflow = document.body.style.overflow;
+      document.body.style.overflow = 'hidden';
+      return () => {
+        document.body.style.overflow = originalOverflow;
+      };
+    }
+  }, [isCartOpen]);
 
   return (
-    <div className="fixed inset-0 z-50 overflow-hidden">
-      {/* Backdrop */}
+    <div
+      className={`fixed inset-0 z-50 overflow-hidden drawer-container-transition ${
+        isCartOpen ? 'visible pointer-events-auto' : 'invisible pointer-events-none'
+      }`}
+      role="dialog"
+      aria-modal="true"
+      aria-hidden={!isCartOpen}
+      aria-label="Your Plant Basket"
+    >
+      {/* Backdrop with smooth cubic-bezier fade */}
       <div
-        className="absolute inset-0 bg-forest-950/60 backdrop-blur-sm transition-opacity"
+        className={`fixed inset-0 bg-forest-950/60 backdrop-blur-sm drawer-backdrop-transition ${
+          isCartOpen ? 'opacity-100' : 'opacity-0'
+        }`}
         onClick={() => setIsCartOpen(false)}
+        aria-hidden="true"
       />
 
-      <div className="fixed inset-y-0 right-0 max-w-full flex pl-10">
-        <div className="w-screen max-w-md bg-cream-light shadow-2xl flex flex-col border-l border-forest/10 animate-in slide-in-from-right duration-300">
+      {/* Slide-in Drawer Container (Mobile: full width without left gap; PC: max-w-md) */}
+      <div className="fixed inset-y-0 right-0 max-w-full flex pl-0 sm:pl-10 pointer-events-none">
+        <div
+          className={`w-screen max-w-full sm:max-w-md bg-cream-light shadow-2xl flex flex-col border-l border-forest/10 pointer-events-auto transform-gpu drawer-panel-transition ${
+            isCartOpen ? 'translate-x-0' : 'translate-x-full'
+          }`}
+        >
           
           {/* Header */}
           <div className="p-5 border-b border-forest/10 flex items-center justify-between bg-cream">
@@ -45,7 +83,7 @@ export const CartDrawer: React.FC = () => {
             </div>
             <button
               onClick={() => setIsCartOpen(false)}
-              className="p-1.5 rounded-full text-forest/70 hover:text-forest hover:bg-forest/5 transition-colors"
+              className="w-9 h-9 rounded-full text-forest/70 hover:text-forest hover:bg-forest/10 flex items-center justify-center transition-colors active:scale-95"
               aria-label="Close cart"
             >
               <X className="w-5 h-5" />

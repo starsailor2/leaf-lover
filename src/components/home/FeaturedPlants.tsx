@@ -42,9 +42,9 @@ export const FeaturedPlants: React.FC<FeaturedPlantsProps> = ({ products }) => {
         </FadeIn>
 
         {/* 4 Cards Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
           {featuredList.map((product, idx) => (
-            <FadeIn key={product.id} direction="up" delay={idx * 100}>
+            <FadeIn key={product.id} direction="scale" staggerIndex={idx}>
               <ProductCard product={product} priority={idx === 0} />
             </FadeIn>
           ))}

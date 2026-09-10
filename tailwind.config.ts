@@ -62,10 +62,21 @@ const config: Config = {
         soft: "0 4px 20px -2px rgba(24, 58, 43, 0.05)",
         card: "0 10px 30px -4px rgba(24, 58, 43, 0.08)",
         hover: "0 20px 40px -6px rgba(24, 58, 43, 0.12)",
-      }
+      },
+      scale: {
+        '102': '1.02',
+        '103': '1.03',
+        '105': '1.05',
+        '107': '1.07',
+        '110': '1.10',
+      },
+      willChange: {
+        transform: 'transform',
+      },
     },
   },
   plugins: [],
 };
+
 
 export default config;

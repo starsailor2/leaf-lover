@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import React from 'react';
 import Link from 'next/link';
@@ -46,20 +46,18 @@ const needsData = [
 
 export const ShopByNeed: React.FC = () => {
   return (
-    <section className="py-16 lg:py-20 bg-cream-light/60 border-y border-forest/5">
+    <section className="py-16 lg:py-20 bg-cream-light/60 border-y border-forest/5 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         {/* Section Header */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-12">
+        <FadeIn direction="up" className="flex flex-col md:flex-row md:items-end justify-between mb-10">
           <div className="max-w-xl">
-            <span className="text-xs uppercase tracking-widest text-leaf font-semibold">
-              Find Your Fit
-            </span>
+            <span className="text-xs uppercase tracking-widest text-leaf font-semibold">Find Your Fit</span>
             <h2 className="editorial-heading text-3xl sm:text-4xl font-bold text-forest mt-1">
               Shop by what your space needs.
             </h2>
             <p className="text-forest/70 text-sm mt-2">
-              Instead of guessing among hundreds of varieties, discover plants matched to your lighting, lifestyle, and room purpose.
+              Discover plants matched to your lighting, lifestyle, and room purpose.
             </p>
           </div>
           <Link
@@ -69,45 +67,50 @@ export const ShopByNeed: React.FC = () => {
             <span>View All Categories</span>
             <ArrowUpRight className="w-4 h-4" />
           </Link>
-        </div>
+        </FadeIn>
 
-        {/* 5 Cards Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-5">
+      </div>
+
+      {/* Horizontal drag-scroll filmstrip — full width, no max-width cap */}
+      <div className="overflow-x-auto no-scrollbar cursor-grab active:cursor-grabbing">
+        <div className="flex gap-4 px-4 sm:px-8 lg:px-12 pb-2" style={{ width: 'max-content' }}>
           {needsData.map((item, idx) => (
-            <FadeIn key={item.id} delay={idx * 80} className="h-full">
+            <FadeIn key={item.id} direction="scale" delay={idx * 90}>
               <Link
                 href={item.href}
-                className="group relative flex flex-col h-full rounded-xl overflow-hidden bg-cream border border-forest/10 hover:border-forest/30 shadow-soft hover:shadow-card transition-all duration-300 hover:-translate-y-1"
+                className="group relative flex-shrink-0 block overflow-hidden rounded-2xl"
+                style={{ width: '260px', height: '360px' }}
+                draggable={false}
               >
-                <div className="relative aspect-[4/3] w-full overflow-hidden bg-forest/5">
-                  <Image
-                    src={item.image}
-                    alt={item.title}
-                    fill
-                    className="object-cover transition-transform duration-500 group-hover:scale-105"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-forest/30 to-transparent" />
-                </div>
+                {/* Full-bleed image — no border, no background box */}
+                <Image
+                  src={item.image}
+                  alt={item.title}
+                  fill
+                  sizes="260px"
+                  className="object-cover transition-transform duration-700 group-hover:scale-105"
+                />
 
-                <div className="p-4 flex-1 flex flex-col justify-between">
-                  <div>
-                    <h3 className="font-serif text-lg font-bold text-forest group-hover:text-leaf transition-colors flex items-center justify-between">
-                      <span>{item.title}</span>
-                      <ArrowUpRight className="w-4 h-4 opacity-0 -translate-x-1 group-hover:opacity-100 group-hover:translate-x-0 transition-all text-leaf" />
-                    </h3>
-                    <p className="text-xs text-forest/70 mt-1.5 leading-relaxed">
-                      {item.description}
-                    </p>
-                  </div>
-                  <div className="mt-3 pt-2 border-t border-forest/5 flex items-center text-[11px] font-semibold text-leaf">
-                    <span>Browse Selection →</span>
+                {/* Gradient overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-forest/80 via-forest/20 to-transparent" />
+
+                {/* Text in lower portion */}
+                <div className="absolute bottom-0 inset-x-0 p-5 z-10">
+                  <h3 className="font-serif text-xl font-bold text-cream leading-tight group-hover:text-sage transition-colors">
+                    {item.title}
+                  </h3>
+                  <p className="text-cream/65 text-xs mt-1.5 leading-relaxed line-clamp-2">
+                    {item.description}
+                  </p>
+                  <div className="mt-3 inline-flex items-center gap-1 text-[11px] text-sage font-semibold uppercase tracking-wide">
+                    <span>Browse</span>
+                    <ArrowUpRight className="w-3 h-3 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                   </div>
                 </div>
               </Link>
             </FadeIn>
           ))}
         </div>
-
       </div>
     </section>
   );
